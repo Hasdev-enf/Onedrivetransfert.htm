@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;    /* Centre verticalement */
+    height: 100vh;          /* Vue pleine hauteur */
+}
+
+/* Bande bleue pour l'image principale */
+.header-bar {
+    background-color: #0078d4; /* Couleur bleue */
+    height: 50px;             /* Hauteur de la bande */
+    position: absolute;       /* Position en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%;              /* Bande pleine largeur */
+    display: flex;
+    align-items: center;      /* Centre verticalement l'image */
+    padding-left: 10px;       /* Espacement pour l'image */
+    box-sizing: border-box;   /* Inclut le padding dans la largeur totale */
+}
+
+/* Image principale */
+.main-logo {
+    width: 100px; /* Taille du logo principale conservée */
+}
+
+/* Carte contenant le contenu */
+.card {
+    background-color: white; /* Fond blanc */
+    padding: 20px 30px;      /* Espace intérieur */
+    border-radius: 8px;      /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    width: 100%;
+    max-width: 400px;        /* Limite la largeur à 400px */
+    text-align: center;      /* Centre le texte */
+    position: relative;      /* Position relative pour superposition d'éléments */
+    margin-top: 60px;        /* Espacement sous la bande bleue */
+}
+
+/* Image secondaire */
+.secondary-logo {
+    width: 150px;            /* Taille de l'image secondaire */
+    position: absolute;     /* Permet de la positionner au-dessus de la carte */
+    top: -40px;             /* Place l'image secondaire au-dessus de la carte */
+    left: 50%;              /* Centre horizontalement */
+    transform: translateX(-50%); /* Correction de l'alignement */
+}
+
+/* Titre de la carte */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;             /* Couleur du texte */
+}
+
+/* Description dans la carte */
+.card-description {
+    font-size: 1rem;
+    color: #555;             /* Couleur de texte douce */
+    margin-bottom: 20px;
+}
+
+/* Icone du fichier PDF */
+.file-icon {
+    width: 60px;            /* Augmente la taille de l'icône PDF */
+    margin-top: 10px;       /* Espacement au-dessus */
+}
+
+/* Formulaire */
+.card-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Champs de saisie */
+.form-input {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Focus sur les champs */
+.form-input:focus {
+    border-color: #0078d4; /* Couleur bleue au focus */
+}
+
+/* Bouton */
+.form-button {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #0078d4; /* Couleur bleue Microsoft */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover sur le bouton */
+.form-button:hover {
+    background-color: #005a9e; /* Couleur bleue foncée */
+}
+
+
+#loading {
+    text-align: center;
+    font-size: 18px;
+    color: #0078d4; /* Couleur bleue Microsoft */
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
